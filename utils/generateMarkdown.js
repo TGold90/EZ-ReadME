@@ -51,9 +51,7 @@ function generateMarkdown(data) {
 
   ---
 
-  ##Link to Video Walkthrough
-  
-  ![Video Walkthrough](https://img.shields.io/badge/license-${data.license}-blue)
+
 `;
 }
 
