@@ -61,8 +61,13 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  ${data.questions}
+  Please email <${data.questions}> with questions about this project.
+
+  ---
+
+  ##Link to Video Walkthrough
   
+  ![Video Walkthrough](https://img.shields.io/badge/license-${data.license}-blue)
 `;
 }
 
