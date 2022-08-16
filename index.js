@@ -1,32 +1,28 @@
-// TODO: Include packages needed for this application
 const genMarkDown = require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// TODO: Create an array of questions for user input
-//title, description, installation, usage, license, contributing, tests, Questions
-// const questions = [];
 function promptUser() {
   inquirer
     .prompt([
       {
         type: "input",
-        message: "What is the title of your application?",
+        message: "What is the title of this application?",
         name: "title",
       },
       {
         type: "input",
-        message: "Describe your application",
+        message: "Describe what this application does.",
         name: "description",
       },
       {
         type: "input",
-        message: "How do you install this application",
+        message: "What are the steps to install this application?",
         name: "installation",
       },
       {
         type: "input",
-        message: "How do you use this application?",
+        message: "How is this application used?",
         name: "usage",
       },
       {
@@ -40,7 +36,7 @@ function promptUser() {
         message: "Which license are you using?",
         name: "license",
         default: "MIT",
-        choices: ["MIT", "Apache", "ISC"],
+        choices: ["MIT", "Apache", "ISC", "GPL", "Unlicense"],
       },
       {
         type: "input",
@@ -51,7 +47,7 @@ function promptUser() {
       {
         type: "input",
         message:
-          "If you have built any tests for your application you can include a URL here.",
+          "If you have built any tests for your application you can paste a URL here.",
         name: "tests",
       },
       {
@@ -62,18 +58,18 @@ function promptUser() {
     ])
     .then((response) => {
       const readMeText = genMarkDown(response);
-      writeToFile("dist/README.md", readMeText);
+      writeToFile("dist/README.md", readMeText, (err) =>
+        err ? console.log(err) : console.log("Success!")
+      );
     });
 }
-// TODO: Create a function to write README file
+
 function writeToFile(fileName, data) {
   fs.writeFileSync(fileName, data);
 }
 
-// // TODO: Create a function to initialize app
 function init() {
   promptUser();
 }
 
-// // Function call to initialize app
 init();

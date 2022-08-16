@@ -1,8 +1,8 @@
-# tom
+# Quick Byte
 
   ## Description
   
-  Gold
+  restaurant generater
 
   ## Table of Contents
   
@@ -10,47 +10,46 @@
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
-  - [How to Contribute](#how_to_contribute)
+  - [How to Contribute](#how-to-contribute)
   - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
   
-  is 
+  visit the URL! 
   
   ## Usage
 
-  v
+  click category, get restaurants, save to favorites if desired
   
   ## Credits
   
-  f
+  [TGOLD90](https://github.com/TGOLD90)
 
   ## License
   
-  MIT
+  Apache
 
   ---
   
-  
   ## Badges
   
-  ![license](https://img.shields.io/badge/license-MIT-blue)
+  ![license](https://img.shields.io/badge/license-Apache-blue)
   
   ## How to Contribute
 
-  cool
+  contributor covenant standards
   
   ## Tests
 
-  mr 
+  [https://github.com](https://github.com)
 
   ## Questions
 
-  Please email <man> with questions about this project.
+  Please email <thomaswgold90@gmail.com> with questions about this project.
 
   ---
 
   ##Link to Video Walkthrough
   
-  ![Video Walkthrough](https://img.shields.io/badge/license-MIT-blue)
+  ![Video Walkthrough](https://img.shields.io/badge/license-Apache-blue)
